@@ -33,6 +33,10 @@ const Main = () => {
                 :
                 <h3 className='is-size-3 has-text-centered'>Loading.....</h3>
             }
+            {
+                failed &&
+                <h3 className='is-size-3 has-text-centered'>Please try again later.....</h3>
+            }
         </div>
     )
 }
