@@ -2,6 +2,8 @@ import Pho01 from './Images/fb.png'
 import Pho02 from './Images/insta.png'
 import Pho03 from './Images/twitter.png'
 
+
+
 const footer = () => {
     return (
         <footer>
