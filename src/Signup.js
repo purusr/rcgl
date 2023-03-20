@@ -29,7 +29,7 @@ const Signup = () =>{
      }
     }
     return(
-        <div style={{width: '500px'}} className="mx-auto px-2">
+        <div style={{width: '500px', height: '70vh', marginTop:"50px"}} className="mx-auto px-2">
             <ToastContainer/>
             <form className="control">
                 <div className="field">

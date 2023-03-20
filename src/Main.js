@@ -1,11 +1,17 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const Main = () => {
-
+    const navigate = useNavigate()
     const [imagedata, setImagedata] = useState()
     const [failed, setFailed] = useState(false)
+    const user = localStorage.getItem("profile")
+
+    // if(!user){
+    //   navigate('/signin')
+    // }
 
     useEffect(() => {
         axios.get("http://localhost:5000/getGallery")
@@ -19,7 +25,7 @@ const Main = () => {
                       {imagedata.map((idata) =>{
                         return(
                         <div className='items'>
-                            <img className='image' src={idata.image_url} alt="product-image"></img>
+                            <img className='image' src={idata.image_url} alt="product"></img>
                             <div className='caption is-flex is-flex-direction-row is-justify-content-space-between'>
                                 <button>L</button>
                                 <button>C</button>

@@ -6,6 +6,8 @@ import End from './End'
 import Signup from './Signup';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
+import Signin from './Signin';
+import Pnf from './Pnf';
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
         <Route path='/' element={ <Main/>}>
         </Route>
         <Route path='/signup' element={ <Signup/>}>
+        </Route>
+        <Route path='/signin' element={ <Signin/>}>
+        </Route>
+        <Route path='*' element={ <Pnf/>}>
         </Route>
       </Routes>
       </BrowserRouter>
