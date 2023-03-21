@@ -25,9 +25,9 @@ const Head = () => {
           <img className='image is-64x64 mt-3' src={img1} alt='pic of user'></img>
           
           { status ?
-            <button className='button is-primary is-small'><a href='/signin' style={{ textDecoration: 'none'}}>Signin</a></button>
+            <button className='button is-link is-small'><a href='/signin' style={{ textDecoration: 'none'}}>Signin</a></button>
             :
-            <button onClick={(e) =>handleSignout(e)} className='button is-primary is-small'>Signout</button>
+            <button onClick={(e) =>handleSignout(e)} className='button is-link is-small'>Signout</button>
           }
           </div>
     </div>
